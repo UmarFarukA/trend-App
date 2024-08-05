@@ -42,7 +42,7 @@ export async function getCurrentUser() {
 export async function Register(data) {
   try {
     const user = await getUser(data.username);
-    console.log(data.username);
+    // console.log(data.username);
 
     if (user) {
       console.log("User already exits");
